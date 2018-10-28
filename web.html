@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="Ru-ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Big Data Key</title>
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/style.css"/>    
+    
+<!--
+	<link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+-->
+    
+    <meta name="description" content="Описание">
+    <meta name="keywords" content="Ключевые слова через запятую" />
+
+<!--
+    <link rel="image_src" href="/img/og.jpg" />  
+    
+    <meta property="og:type" content="website / movie / book / blog / etc" />
+    <meta property="og:url" content="http://site.ru" />
+    
+    <meta property="og:image" content="http://site.ru/img/og/og.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="968">
+    <meta property="og:image:height" content="504">
+    
+    <meta property="og:title" content="Заголовок для соцсети (ограничение в 65 символов)" />
+    <meta property="og:description" content="Описание для соцсети" />
+    <meta property="og:video" content="http://site.ru" />
+    <meta property="og:locale" content="ru_RU / en_GB / de_DE / etc." />
+    <meta property="og:site_name" content="site.ru" />
+
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="site.ru"/>
+    <meta name="twitter:title" content="Заголовок">
+    <meta name="twitter:description" content="Описание"/>
+    <meta name="twitter:creator" content="Автор"/>
+    <meta name="twitter:image:src" content="https://site.com/img/twitter.png"/>
+    <meta name="twitter:domain" content="http://site.ru"/>
+-->
+
+	<meta name="theme-color" content="#8753fc">
+	<meta name="msapplication-navbutton-color" content="#8753fc">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#8753fc">
+</head>
+<body class="set-1">
+    <!--[if lt IE 8]>
+        <p class="browserhappy">
+            Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="https://browsehappy.com/"  target="_blank">обновите</a>.
+        </p>
+    <![endif]-->
+	<div class="wrapper">
+        <header class="header" id="js-header">
+            <div class="container">
+                <div class="header__wrap">
+                    <a href="/" class="header__logo"><img src="img/big_data_key.png" alt="Big Data Key"></a>
+                    <nav class="main-menu">
+                        <ul>
+                            <li>
+                            	<div class="active">Сайты</div>
+                            	<div class="main-menu__sub">
+									<ul>
+										<li><a href="web.html" class="active">Разработка</a></li>
+										<li><a href="support.html">Поддержка</a></li>
+									</ul>
+                            	</div>
+                            </li>
+                            <li><a href="advertising.html">Реклама</a></li>
+                            <li>
+                            	<div>Бизнес</div>
+                            	<div class="main-menu__sub">
+									<ul>
+										<li><a href="big-data.html">Big Data</a></li>
+                            			<li><a href="crm.html">BDK CRM</a></li>
+									</ul>
+                            	</div>
+                            </li>                            
+                            <li><a href="pressa.html">Пресса о нас</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__bar">
+                        <a href="tel:+74996488099" class="header__bar-tel">+7 (499) 648-80-99</a>
+                        <button class="btn btn--blue header__bar-btn js-order-btn"><span>Заказать звонок</span></button>
+                        <button class="btn mob-menu-btn js-mob-menu-btn"><span></span>
+                        <span></span>
+                        <span></span></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="header-mob" id="js-header-mob">
+            <div class="container">
+                <div class="header__wrap">
+                    <a href="/" class="header-mob__logo"><img src="img/logo1.png" alt="Big Data Key"></a>
+                    <nav class="main-menu" id="js-mob-menu">
+                        <ul>
+                            <li>
+                            	<div class="active">Сайты</div>
+                            	<div class="main-menu__sub">
+									<ul>
+										<li><a href="web.html" class="active">Разработка</a></li>
+										<li><a href="support.html">Поддержка</a></li>
+									</ul>
+                            	</div>
+                            </li>
+                            <li><a href="advertising.html">Реклама</a></li>
+                            <li>
+                            	<div>Бизнес</div>
+                            	<div class="main-menu__sub">
+									<ul>
+										<li><a href="big-data.html">Big Data</a></li>
+                            			<li><a href="crm.html">BDK CRM</a></li>
+									</ul>
+                            	</div>
+                            </li>                            
+                            <li><a href="pressa.html">Пресса о нас</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-mob__bar">
+                        <a href="tel:+74996488099" class="header-mob__bar-tel">+7 (499) 648-80-99</a>
+                        <button class="btn mob-menu-btn js-mob-menu-btn"><span></span>
+                        <span></span>
+                        <span></span></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+                <section class="maine-sec" id="js-main-sec">
+                    <video class="maine-sec__video" muted="" autoplay="autoplay" loop="loop" preload="auto">               
+                        <source src="video/videobg.mp4" type='video/mp4'>
+                    </video>       
+                    <div class="container">
+                        <div class="maine-sec__wrap">
+                            <div class="maine-sec__middle">
+                                <h1 class="maine-sec__title">Создание сайтов <br>для успешного бизнеса</h1>
+                                <button class="btn main-action-btn js-action-main-btn">Акция Black</button>
+                            </div>
+                            <div class="price">
+                                <div class="price__item">
+                                    <div class="price__item-icn price__item-icn--landing">
+                                        <img class="price__item-img" src="img/icn-1.png" alt="">
+                                        <img class="price__item-img-hover" src="img/icn-1-h.png" alt="">
+                                    </div>
+                                    <div class="price__item-name">Лендинг</div>
+                                    <div class="price__item-txt">Продающий одностраничный сайт. Концентрируем внимание на одном товаре или услуге. Быстрый результат при минимуме затрат.</div>
+                                    <div class="price__item-price">от <strong>35 000 руб.</strong></div>
+                                    <buttom class="btn btn--red price__item-btn js-order-btn" data-name="Заказать лендинг">Заказать</buttom>
+                                </div>
+                                <div class="price__item">
+                                    <div class="price__item-icn price__item-icn--corporate">
+                                        <img class="price__item-img" src="img/icn-2.png" alt="">
+                                        <img class="price__item-img-hover" src="img/icn-2-h.png" alt="">
+                                    </div>
+                                    <div class="price__item-name">Корпоративный сайт</div>
+                                    <div class="price__item-txt">Рассказать о вашей компании. Показать её преимущества и сильные стороны. Привлечь новых клиентов.</div>
+                                    <div class="price__item-price">от <strong>55 000 руб.</strong></div>
+                                    <buttom class="btn btn--red price__item-btn js-order-btn" data-name="Заказать корпоративный сайт">Заказать</buttom>
+                                </div>
+                                <div class="price__item">
+                                    <div class="price__item-icn price__item-icn--store">
+                                        <img class="price__item-img" src="img/icn-3.png" alt="">
+                                        <img class="price__item-img-hover" src="img/icn-3-h.png" alt="">
+                                    </div>
+                                    <div class="price__item-name">Интернет-магазин</div>
+                                    <div class="price__item-txt">Удобный каталог и поиск товаров. Лёгкий процесс покупки и оплаты. Максимум продаж</div>
+                                    <div class="price__item-price">от <strong>75 000 руб.</strong></div>
+                                    <buttom class="btn btn--red price__item-btn js-order-btn" data-name="Заказать интернет-магазин">Заказать</buttom>
+                                </div>
+                                <div class="price__item">
+                                    <div class="price__item-icn price__item-icn--application">
+                                        <img class="price__item-img" src="img/icn-4.png" alt="">
+                                        <img class="price__item-img-hover" src="img/icn-4-h.png" alt="">
+                                    </div>
+                                    <div class="price__item-name">Индивидуальные решения</div>
+                                    <div class="price__item-txt">Высоконагруженные проекты. Big Data. Нестандартный функционал. Сможем всё.</div>
+                                    <div class="price__item-price">от <strong>95 000 руб.</strong></div>
+                                    <buttom class="btn btn--red price__item-btn js-order-btn" data-name="Заказать индивидуальное">Заказать</buttom>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec advantages scroll-animate">
+<!--
+                    <div class="coffe">
+                        <div class="coffe-animation coffe-animation_1 active"></div>
+                        <div class="coffe-animation coffe-animation_2"></div>
+                        <div class="coffe-animation coffe-animation_3"></div>
+                        <div class="coffe-animation coffe-animation_4"></div>
+                        <div class="coffe-animation coffe-animation_5"></div>
+                        <div class="coffe-animation coffe-animation_6"></div>
+                        <div class="coffe-animation coffe-animation_7"></div>
+                        <div class="coffe-animation coffe-animation_8"></div>
+                        <div class="coffe-animation coffe-animation_9"></div>
+                        <div class="coffe-animation coffe-animation_10"></div>
+                        <div class="coffe-animation coffe-animation_11"></div>
+                        <div class="coffe-animation coffe-animation_12"></div>
+                        <div class="coffe-animation coffe-animation_13"></div>
+                        <div class="coffe-animation coffe-animation_14"></div>
+                        <div class="coffe-animation coffe-animation_15"></div>
+                        <div class="coffe-animation coffe-animation_16"></div>
+                        <div class="coffe-animation coffe-animation_17"></div>
+                        <div class="coffe-animation coffe-animation_18"></div>
+                        <div class="coffe-animation coffe-animation_19"></div>
+                        <div class="coffe-animation coffe-animation_20"></div>
+                        <div class="coffe-animation coffe-animation_21"></div>
+                        <div class="coffe-animation coffe-animation_22"></div>
+                        <div class="coffe-animation coffe-animation_23"></div>
+                        <div class="coffe-animation coffe-animation_24"></div>
+                        <div class="coffe-animation coffe-animation_25"></div>
+                        <div class="coffe-animation coffe-animation_26"></div>
+                        <div class="coffe-animation coffe-animation_27"></div>
+                        <div class="coffe-animation coffe-animation_28"></div>
+                        <div class="coffe-animation coffe-animation_29"></div>
+                        <div class="coffe-animation coffe-animation_30"></div>
+                        <div class="coffe-animation coffe-animation_31"></div>
+                        <div class="coffe-animation coffe-animation_32"></div>
+                        <div class="coffe-animation coffe-animation_33"></div>
+                        <div class="coffe-animation coffe-animation_34"></div>
+                        <div class="coffe-animation coffe-animation_35"></div>
+                        <div class="coffe-animation coffe-animation_36"></div>
+                        <div class="coffe-animation coffe-animation_37"></div>
+                        <div class="coffe-animation coffe-animation_38"></div>
+                        <div class="coffe-animation coffe-animation_39"></div>
+                        <div class="coffe-animation coffe-animation_40"></div>
+                        <div class="coffe-animation coffe-animation_41"></div>
+                        <div class="coffe-animation coffe-animation_42"></div>
+                        <div class="coffe-animation coffe-animation_43"></div>
+                        <div class="coffe-animation coffe-animation_44"></div>
+                        <div class="coffe-animation coffe-animation_45"></div>
+                        <div class="coffe-animation coffe-animation_46"></div>
+                      </div>
+-->
+                    <div class="gaph">
+                        <div class="gaph__inner">
+                            <div class="graph-line"></div>
+                            <div><span></span><span></span><span></span><span></span><span></span></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <h2 class="sec__title advantages__title">Почему наши сайты —<br>новая точка роста вашего дела</h2>
+                        <div class="advantages__wrap">
+                            <div class="advantages__item">
+                                <div class="advantages__item-icn"><img src="img/brain.png" alt=""></div>
+                                <div class="advantages__item-title">Мы не просто делаем сайты</div>
+                                <div class="advantages__item-txt">Мы изучаем ваших клиентов и конкурентов. Исходя из анализа среды, предлагаем оптимальное решение для ваших задач. Функции и дизайн сайтов наших заказчиков всегда соответствуют требованиям их бизнес-процессов.</div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__item-icn"><img src="img/devices.png" alt=""></div>
+                                <div class="advantages__item-title">Сделанные нами сайты <br>работают хорошо везде</div>
+                                <div class="advantages__item-txt">Интернет стал всеобъемлющим. Мы тщательно прорабатываем интерфейсы под наиболее популярные устройства. Адаптируем ваш сайт под компьютеры, планшеты и смартфоны.</div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__item-icn"><img src="img/chip.png" alt=""></div>
+                                <div class="advantages__item-title">Наши сайты изначально <br>оптимизированы под продвижение</div>
+                                <div class="advantages__item-txt">Архитектура наших сайтов оптимальна для SEO-продвижения. Мы заранее учитываем, какие страницы будут участвовать в контекстной рекламе. С нами ваша реклама будет эффективнее и дешевле.</div>
+                            </div>
+                            <div class="advantages__item">
+                                <div class="advantages__item-icn"><img src="img/shield.png" alt=""></div>
+                                <div class="advantages__item-title">Предоставляем гарантию на сайты</div>
+                                <div class="advantages__item-txt">После сдачи проектов мы никуда не пропадаем. Если уже после закрытия проекта во время пользования сайтом будут выявлены баги, то мы бесплатно их исправим. Если потребуются доработки, то внесём их за умеренную плату.</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="sec video">
+                        <h2 class="sec__title video__title">Видео о нас</h2>
+                        <div class="video__slider" id="js-video-slider">
+                            <div>
+                                <div class="video__slide">
+                                    <div class="video__container">
+                                        <div class="video__blind js-blind" data-href="https://www.youtube.com/embed/Fo6rCkFrpe8"><img src="img/video/3.jpg" alt=""></div>
+                                    </div>
+                                    <div class="video__name">Отзыв компании «АгроДоход»</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="video__slide">
+                                    <div class="video__container">
+                                        <div class="video__blind js-blind" data-href="https://www.youtube.com/embed/-UcpQImGI7w"><img src="img/video/2.jpg" alt=""></div>
+                                    </div>
+                                    <div class="video__name">О компании Big Data Key</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="video__slide">
+                                    <div class="video__container">
+                                        <div class="video__blind js-blind" data-href="https://www.youtube.com/embed/TaJ9WORUuhI"><img src="img/video/1.jpg" alt=""></div>
+                                    </div>
+                                    <div class="video__name">Как мы создаем сайты</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="video__slide">
+                                    <div class="video__container">
+                                        <div class="video__blind js-blind" data-href="https://www.youtube.com/embed/Fo6rCkFrpe8"><img src="img/video/3.jpg" alt=""></div>
+                                    </div>
+                                    <div class="video__name">Отзыв компании «АгроДоход»</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-wrapper" id="js-video-vrapper">
+                            <div class="video-wrapper__overlay js-video-close"></div>
+                            <div class="video-wrapper__container">
+                                <button class="btn video-wrapper__close js-video-close" title="Закрыть">Закрыть</button>
+                                <div class="video-wrapper__blc" id="js-video-container">
+                                    <iframe frameborder="0" allowfullscreen=""></iframe>
+<!--                                    <iframe frameborder="0" allowfullscreen=""></iframe>-->
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <section class="sec portfolio">
+                    <div class="container">
+                        <h2 class="sec__title portfolio__title">Наши работы</h2>
+                        <div class="portfolio__slider js-portfolio-slider">
+                        	<div>
+                        		<div class="portfolio__slide clearfix">
+                        			<a href="#" target="_blank" class="portfolio__blc portfolio__blc--05_1 portfolio__blc--left">
+                        				<div class="portfolio__blc-main" style="background-color: #ff0000;"></div>
+                        				<div class="portfolio__blc-hover" style="background-color: #fc00ff;"></div>
+                        			</a>
+                        			<a href="#" target="_blank" class="portfolio__blc portfolio__blc--05_05 portfolio__blc--right">
+                        				<div class="portfolio__blc-main" style="background-color: #24ff00;"></div>
+                        				<div class="portfolio__blc-hover" style="background-color: #ffd800;"></div>
+                        			</a>
+                        			<a href="#" target="_blank" class="portfolio__blc portfolio__blc--05_05 portfolio__blc--right">
+                        				<div class="portfolio__blc-main" style="background-color: #4e4e4e;"></div>
+                        				<div class="portfolio__blc-hover" style="background-color: #1800ff;"></div>
+                        			</a>
+                        		</div>
+                        	</div>
+                        	<div>
+                        		<div class="portfolio__slide clearfix">
+                        			<a href="#" target="_blank" class="portfolio__blc portfolio__blc--1_05">
+                        				<div class="portfolio__blc-main" style="background-color: #1e00ff;"></div>
+                        				<div class="portfolio__blc-hover" style="background-color: #ff0000;"></div>
+                        			</a>
+                        			<a href="#" target="_blank" class="portfolio__blc portfolio__blc--05_05 portfolio__blc--left">
+                        				<div class="portfolio__blc-main" style="background-color: #ffba00;"></div>
+                        				<div class="portfolio__blc-hover" style="background-color: #00ff66;"></div>
+                        			</a>
+                        			<a href="#" target="_blank" class="portfolio__blc portfolio__blc--05_05 portfolio__blc--right">
+                        				<div class="portfolio__blc-main" style="background-color: #ff00f0;"></div>
+                        				<div class="portfolio__blc-hover" style="background-color: #4e4e4e;"></div>
+                        			</a>
+                        		</div>
+                        	</div>
+                        	<div>
+                        		<div class="portfolio__slide clearfix">
+                        			<a href="#" target="_blank" class="portfolio__blc portfolio__blc--05_05 portfolio__blc--left">
+                        				<div class="portfolio__blc-main" style="background-color: #ff9600;"></div>
+                        				<div class="portfolio__blc-hover" style="background-color: #0cff00;"></div>
+                        			</a>
+                        			<a href="#" target="_blank" class="portfolio__blc portfolio__blc--05_1 portfolio__blc--right">
+                        				<div class="portfolio__blc-main" style="background-color: #0600ff;"></div>
+                        				<div class="portfolio__blc-hover" style="background-color: #ff0000;"></div>
+                        			</a>
+                        			<a href="#" target="_blank" class="portfolio__blc portfolio__blc--05_05 portfolio__blc--left">
+                        				<div class="portfolio__blc-main" style="background-color: #ff00f6;"></div>
+                        				<div class="portfolio__blc-hover" style="background-color: #4e4e4e;"></div>
+                        			</a>
+                        		</div>
+                        	</div>
+                        </div>
+                        <div class="portfolio__mob-slider js-portfolio-slider">
+                        	<div><a href="#" target="_blank" class="portfolio__mob-slide"><div class="portfolio__mob-blc" style="background: red;"></div></a></div>
+                        	<div><a href="#" target="_blank" class="portfolio__mob-slide"><div class="portfolio__mob-blc" style="background: green;"></div></a></div>
+                        	<div><a href="#" target="_blank" class="portfolio__mob-slide"><div class="portfolio__mob-blc" style="background: blue;"></div></a></div>
+                        	<div><a href="#" target="_blank" class="portfolio__mob-slide"><div class="portfolio__mob-blc" style="background: grey;"></div></a></div>
+                        	<div><a href="#" target="_blank" class="portfolio__mob-slide"><div class="portfolio__mob-blc" style="background: yellow;"></div></a></div>
+                        	<div><a href="#" target="_blank" class="portfolio__mob-slide"><div class="portfolio__mob-blc" style="background: black;"></div></a></div>
+                        	<div><a href="#" target="_blank" class="portfolio__mob-slide"><div class="portfolio__mob-blc" style="background: violet;"></div></a></div>
+                        	<div><a href="#" target="_blank" class="portfolio__mob-slide"><div class="portfolio__mob-blc" style="background: orange;"></div></a></div>
+                        	<div><a href="#" target="_blank" class="portfolio__mob-slide"><div class="portfolio__mob-blc" style="background: brown;"></div></a></div>
+						</div>
+                    </div>
+                </section>
+                <section class="sec shem">
+                    <div class="container">
+                        <h2 class="sec__title shem__title">8 шагов к вашему успеху с Big Data Key</h2>
+                    </div>
+                    <div class="shem__wrap">
+                        <img src="img/shem.jpg" alt="" class="shem__desc">
+                        <img src="img/shem-mob.jpg" alt="" class="shem__mob">
+                    </div>
+                </section>
+                <section class="sec team">
+                    <div class="container">
+                        <h2 class="sec__title team__title">Наша команда</h2>
+                        <div class="team__slider" id="js-team-slider">
+                            <div>
+                                <div class="team__slide">
+                                    <div class="team__slide-photo">
+                                        <img src="img/ava_6.jpg" alt="">
+                                    </div>
+                                    <div class="team__slide-main">
+                                        <div class="team__slide-name">Филипп</div>
+                                        <div class="team__slide-status">Исполнительный директор</div>
+                                        <blockquote class="team__slide-quote">«Руковожу компанией, как многорукий Ганеша»</blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="team__slide">
+                                    <div class="team__slide-photo">
+                                        <img src="img/ava_6.jpg" alt="">
+                                    </div>
+                                    <div class="team__slide-main">
+                                        <div class="team__slide-name">Филипп</div>
+                                        <div class="team__slide-status">Исполнительный директор</div>
+                                        <blockquote class="team__slide-quote">«Руковожу компанией, как многорукий Ганеша»</blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="team__slide">
+                                    <div class="team__slide-photo">
+                                        <img src="img/ava_6.jpg" alt="">
+                                    </div>
+                                    <div class="team__slide-main">
+                                        <div class="team__slide-name">Филипп</div>
+                                        <div class="team__slide-status">Исполнительный директор</div>
+                                        <blockquote class="team__slide-quote">«Руковожу компанией, как многорукий Ганеша»</blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="team__slide">
+                                    <div class="team__slide-photo">
+                                        <img src="img/ava_6.jpg" alt="">
+                                    </div>
+                                    <div class="team__slide-main">
+                                        <div class="team__slide-name">Филипп</div>
+                                        <div class="team__slide-status">Исполнительный директор</div>
+                                        <blockquote class="team__slide-quote">«Руковожу компанией, как многорукий Ганеша»</blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="team__slide">
+                                    <div class="team__slide-photo">
+                                        <img src="img/ava_6.jpg" alt="">
+                                    </div>
+                                    <div class="team__slide-main">
+                                        <div class="team__slide-name">Филипп</div>
+                                        <div class="team__slide-status">Исполнительный директор</div>
+                                        <blockquote class="team__slide-quote">«Руковожу компанией, как многорукий Ганеша»</blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </section>
+                <section class="sec web-form">
+					<div class="container">
+						<h2 class="sec__title key__title">Закажите свой уникальный сайт</h2>
+						<div class="main-form main-form--white">
+							<form action="php/mail.php" method="post" class="main-form__form js-form-val" name="main_form" id="main-form">
+								<div class="main-form__group">
+									<input type="hidden" name="project_name" value="BigDATAkey">
+									<input type="hidden" name="form_subject" value="BigDATAkey - новая заявка">
+									<input type="text" class="main-form__input js-val" name="name" placeholder="Ваше имя">
+									<input type="tel" class="main-form__input js-mask js-val" name="tel" placeholder="Номер телефона">
+								</div>
+								<button class="btn btn--orange main-form__submit" type="submit">Отправить заявку</button>
+							</form>
+						</div>
+					</div>
+				</section>
+        </main>
+        <footer class="footer">
+        	<div class="container">
+        		<div class="footer__wrap">
+        			<nav class="footer__nav">
+        				<div class="footer__nav-col">
+        					<a href="web.html">Разработка сайтов</a>
+        					<a href="support.html">Поддержка сайтов</a>
+        				</div>
+        				<div class="footer__nav-col">
+        					<a href="big-data.html">Big Data</a>
+        					<a href="crm.html">BDK CRM</a>
+        				</div>
+        				<div class="footer__nav-col">
+        					<a href="advertising.html">Реклама</a>
+        					<a href="pressa.html">Пресса о нас</a>
+        				</div>
+        				<div class="footer__nav-col">
+        					<a href="contacts.html">Контакты</a>
+        				</div>
+        			</nav>
+        			<div class="footer__copyright">© Big Data Key 2018</div>
+        		</div>
+        	</div>
+        </footer>
+        <div class="popup" id="js-order-popup">
+            <div class="popup__overlay js-order-btn"></div>
+            <div class="popup__main" id="js-order-main">
+                <button class="btn popup__close js-order-btn" title="Закрыть">Закрыть</button>
+                <h2 class="popup__title">Заказать звонок</h2>
+                <form action="php/mail.php" method="post" name="order" class="form popup__form js-form-val js-order">
+                    <input type="hidden" name="project_name" value="BigDATAkey">
+                    <input type="hidden" name="form_subject" value="BigDATAkey - новая заявка">
+                    <input type="text" name="name" class="input popup__input js-val" placeholder="Ваше имя">
+                    <input type="tel" name="tel" class="input popup__input js-mask js-val" placeholder="Номер телефона">
+                    <button class="btn btn--red popup__submit" type="submit">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+        <div class="popup" id="js-popup-ready">
+            <div class="popup__overlay js-popup-ready-btn"></div>
+            <div class="popup__main" id="js-order-main">
+                <button class="btn popup__close js-popup-ready-btn" title="Закрыть">Закрыть</button>
+                <h2 class="popup__ready">Ваша заявка была <br>принята</h2>
+            </div>
+        </div>
+        <button class="btn action-btn js-action-btn" id="js-action-btn"><span>Акция Black</span></button>
+        <div class="action" id="js-action">
+            <button class="btn action__close js-action-btn" title="Закрыть">Закрыть</button>
+<!--
+            <button class="btn action__open js-action-btn">
+                Сэкономь 10 000 ₽ <br>на рекламе
+                <span class="action__anim"></span>
+            </button>
+-->
+            <h2 class="action__title">Акция Black </h2>
+            <div class="action__txt">
+				<p>Закажите у нас сайт и получите бесплатно семантическое ядро и 1 месяц ведения контекстной рекламы.</p>
+				<p>Хотите? Позвоните по телефону <br>
+				<a href="tel:+74996488099 ">+7 (499) 648-80-99</a><br>
+				и скажите фразу «Акция Блэк». <br>
+				Или оставьте заявку в этой форме:</p>                
+            </div>
+            <form action="php/mail.php" method="post" name="order" class="form popup__form js-form-val js-order">
+                <input type="hidden" name="project_name" value="BigDATAkey">
+                <input type="hidden" name="form_subject" value="Акция!">
+                <input type="text" name="name" class="input popup__input js-val" placeholder="Ваше имя">
+                <input type="tel" name="tel" class="input popup__input js-mask js-val" placeholder="Номер телефона">
+                <button class="btn btn--black popup__submit" type="submit">Отправить заявку</button>
+            </form>            
+        </div>
+        <div class="action__overlay js-action-btn" id="js-action-overlay"></div>
+        <div class="action action--main" id="js-action-main">
+            <button class="btn action__close js-action-main-btn" title="Закрыть">Закрыть</button>
+<!--
+            <button class="btn action__open js-action-btn">
+                Сэкономь 10 000 ₽ <br>на рекламе
+                <span class="action__anim"></span>
+            </button>
+-->
+            <h2 class="action__title">Акция Black </h2>
+            <div class="action__txt">
+				<p>Закажите у нас сайт и получите бесплатно семантическое ядро и 1 месяц ведения контекстной рекламы.</p>
+				<p>Хотите? Позвоните по телефону <br>
+				<a href="tel:+74996488099 ">+7 (499) 648-80-99</a><br>
+				и скажите фразу «Акция Блэк». <br>
+				Или оставьте заявку в этой форме:</p>                
+            </div>
+            <form action="php/mail.php" method="post" name="order" class="form popup__form js-form-val js-order">
+                <input type="hidden" name="project_name" value="BigDATAkey">
+                <input type="hidden" name="form_subject" value="Акция!">
+                <input type="text" name="name" class="input popup__input js-val" placeholder="Ваше имя">
+                <input type="tel" name="tel" class="input popup__input js-mask js-val" placeholder="Номер телефона">
+                <button class="btn btn--black popup__submit" type="submit">Отправить заявку</button>
+            </form>            
+        </div>
+        <div class="action__overlay js-action-main-btn" id="js-action-main-overlay"></div>
+        
+	</div>
+	<!--jQuery-->
+	<script src="js/vendors/jquery.min.js"></script>
+	<!--slick-->
+	<script src="js/vendors/slick.min.js"></script>
+	<!--maskedinput-->
+	<script src="js/vendors/jquery.maskedinput.min.js"></script>
+	<!--device-->
+	<script src="js/vendors/device.min.js"></script>
+	<!--init-->
+	<script src="js/jquery.init.js"></script>	
+	<!--my scripts-->
+	<script src="js/jquery.main.js"></script>
+</body>
+</html>
