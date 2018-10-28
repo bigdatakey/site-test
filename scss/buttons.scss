@@ -1,0 +1,65 @@
+.btn{
+    display: block;
+    padding: 0;
+    outline: 0!important;
+    outline-color: transparent!important;
+    outline-width: 0!important;
+    outline-style: none!important;
+    box-shadow: none;
+    border: none;
+    background: none;
+    box-shadow: none;
+    transition: .25s ease;  
+    cursor: pointer;
+    border-radius: 0;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    &:-moz-any-link:focus ,
+    &:-moz-focusring,
+    &::-moz-focus-inner,
+    &::-moz-focus-outer{
+        outline: 0!important;
+        outline: none;
+    }
+    &:disabled {
+        cursor: default;
+        opacity: .3;
+        user-select: none;
+    }
+	&--orange,
+    &--red,
+    &--blue{
+        color: #fff;
+        text-align: center;
+        position: relative;
+        height: 3.8rem;
+        line-height: 3.8rem;
+        font-size: 1.4rem;
+        background: #01bb17;
+        font-weight: bold;
+        border-radius: .3rem;
+        span{
+            position: relative;
+            z-index: 2;
+        }
+        &:hover{
+            opacity: .5;            
+        }
+    }
+	&--black{
+		width: 26rem;
+		height: 5.2rem;
+		border: 1px solid #000;
+		line-height: calc(5.2rem - 2px);
+		text-align: center;
+		color: #fff;
+		border-radius: 3px;
+		font-size: 1.6rem;
+		font-weight: 600;
+		background: #000;
+		&:hover{
+			background: #fff;
+			color: #000;
+		}
+	}
+}
